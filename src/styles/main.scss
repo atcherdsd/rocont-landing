@@ -1,0 +1,42 @@
+@use './base/reset';
+@use './base/colors' as *;
+@use 'members' as *;
+
+html, 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: $font-gropled-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    background-color: var(--gray);
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+    position: relative;
+    flex: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}

@@ -1,0 +1,64 @@
+@use '../abstracts/mixins' as *;
+@use './fonts' as *;
+
+@mixin h1 {
+    font-weight: 700;
+
+    @include font-size(64, 32);
+    @include line-height(0.9, 1);
+}
+
+@mixin h2 {
+    font-weight: 700;
+
+    @include font-size(40, 28);
+    @include line-height(0.95, 1);
+}
+
+@mixin h3 {
+    font-weight: 700;
+    line-height: 1;
+
+    @include font-size(32, 24);
+}
+
+@mixin h4 {
+    font-weight: 700;
+
+    @include font-size(24, 20);
+    @include line-height(1.1, 1);
+}
+
+@mixin lead {
+    font-family: $font-tilda-family;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    
+    @include font-size(21, 18);
+    @include line-height(1.4, 1.2);
+}
+
+@mixin body {
+    font-family: $font-tilda-family;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+
+    @include font-size(16, null);
+}
+
+@mixin note {
+    font-family: $font-tilda-family;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    @include font-size(12, null);
+}
+
+@mixin button {
+    font-weight: 700;
+    line-height: 1.1;
+
+    @include font-size(18, 16);
+}
