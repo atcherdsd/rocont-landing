@@ -1,0 +1,16 @@
+@use '../members' as *;
+
+.button-rounded {
+    border-radius: 40px;
+    background-color: var(--green);
+    padding: 16px;
+    transition: box-shadow $base-transition-time ease;
+
+    &.-small {
+        padding: 8px 16px;
+    }
+
+    @include hover {
+       box-shadow: 0 4px 8px rgba(0,0,0, 0.15);
+    }
+}

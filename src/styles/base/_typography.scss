@@ -62,3 +62,10 @@
 
     @include font-size(18, 16);
 }
+
+@mixin link {
+    font-weight: 500;
+    line-height: 1.1;
+
+    @include font-size(16, null);
+}

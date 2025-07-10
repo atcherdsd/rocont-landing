@@ -1,0 +1,54 @@
+@use '../members' as *;
+
+.main-nav {
+    --color: var(--black);
+    --hover-color: var(--green);
+
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+
+    > .list {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            gap: 32px;
+        }
+    }
+
+    > .list .link {
+        position: relative;
+        display: block;
+        padding: 8px 0;
+        color: var(--color);
+        transition: color $base-transition-time;
+
+        @include link;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 0;
+            background-color: var(--hover-color);
+            transition: width $base-transition-time ease-in-out;
+        }
+
+        @include hover {
+            color: var(--hover-color);
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -2,6 +2,11 @@
 @use './base/colors' as *;
 @use 'members' as *;
 
+@use '../styles/components/page-header';
+@use '../styles/components/main-nav';
+@use '../styles/components/button-rounded';
+@use '../styles/components/sandwich-button';
+
 html, 
 body {
     min-height: 100vh;
