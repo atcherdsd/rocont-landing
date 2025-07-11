@@ -4,6 +4,7 @@
 @mixin h1 {
     font-weight: 700;
 
+    @include font-size(64, 32);
     @include line-height(0.9, 1);
 }
 
