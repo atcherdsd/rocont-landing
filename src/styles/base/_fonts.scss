@@ -12,14 +12,22 @@ $font-gropled-family: $font-gropled-name, Arial, sans-serif;
     font-display: swap;
 }
 
-$font-tilda-name: "Tilda Sans VF";
+$font-tilda-name: "TildaSans";
 $font-tilda-family: $font-tilda-name, Arial, sans-serif;
 
-@font-face {
-    font-family: $font-tilda-name;
-    src: url('../assets/fonts/TildaSansVF.woff2') format('woff2'),
-        url('../assets/fonts/TildaSansVF.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+$fontTildaFiles: (
+    "TildaSans-Regular": (400),
+    "TildaSans-Medium": (500)
+);
+
+@each $fileName, $weight in $fontTildaFiles {
+
+    @font-face {
+        font-family: $font-tilda-name;
+        src: url('../assets/fonts/#{$fileName}.woff2') format('woff2'),
+            url('../assets/fonts/#{$fileName}.woff') format('woff');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
 }

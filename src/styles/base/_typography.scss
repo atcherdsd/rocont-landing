@@ -4,7 +4,6 @@
 @mixin h1 {
     font-weight: 700;
 
-    @include font-size(64, 32);
     @include line-height(0.9, 1);
 }
 
@@ -64,6 +63,7 @@
 }
 
 @mixin link {
+    font-family: $font-tilda-family;
     font-weight: 500;
     line-height: 1.1;
 

@@ -59,7 +59,9 @@
         $mobile: $desktop;
     }
 
-    line-height: $mobile;
+    & {
+        line-height: $mobile;
+    }
 
     @include media-breakpoint-up(xl) {
         line-height: $desktop;
