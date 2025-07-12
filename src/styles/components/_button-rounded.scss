@@ -30,7 +30,9 @@
         @include button;
     }
 
-    > .img {
+    > .icon {
+        --bg: var(--white);
+        --arrow: var(--green);
         width: 48px;
         height: 20px;
     }

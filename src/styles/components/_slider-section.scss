@@ -1,0 +1,79 @@
+@use '../members' as *;
+
+.slider-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 64px 0 0 10px;
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: calc(1160px + (100vw - 1160px) / 2);
+        left: calc((100vw - 1160px) / 2);
+        padding: 96px 0 0 0;
+    }
+
+    > .title {
+        color: var(--black);
+        margin-block-start: -0.125em;
+        margin-block-end: -0.175em;
+
+        @include h2;
+
+        @include media-breakpoint-up(lg) {
+            flex: 0 0 232px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            flex: 0 0 236px;
+        }
+    }
+
+    > .container {
+        @include media-breakpoint-up(lg) {
+            overflow: hidden;
+        }
+    }
+
+    > .nav {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+    }
+
+    > .nav > .button {
+        height: 20px;
+    }
+
+    > .nav > .button > .icon {
+        --bg: var(--green);
+        --arrow: var(--white);
+        --base-transition-time: #{$base-transition-time};
+        --transition-time: var(--base-transition-time);
+        width: 48px;
+        height: 20px;
+    }
+
+    > .nav > .button:first-child > .icon {
+        rotate: 180deg;
+    }    
+
+    > .nav > .button:disabled > .icon {
+        --bg: var(--gray);
+        --arrow: var(--black);
+        cursor: auto;
+    }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-arrow" viewBox="0 0 48 20">
+        <style>
+            rect {
+                transition: fill var(--transition-time);
+            }
+            path {
+                transition: stroke var(--transition-time);
+            }
+        </style>
+        <rect x="48" width="20" height="48" rx="10" transform="rotate(90 48 0)" fill="var(--bg)"/>
+        <path d="M34 0V0C34 5.52285 38.4772 10 44 10V10" stroke="var(--arrow)" stroke-width="2" fill="none"/>
+        <path d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10" stroke="var(--arrow)" stroke-width="2" fill="none"/>
+    </symbol>
+</svg>
