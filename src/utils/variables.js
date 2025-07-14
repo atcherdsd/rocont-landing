@@ -5,3 +5,5 @@ export const BREAKPOINTS = {
     LG: 960,
     XL: 1200,
 };
+
+export const API_URL = '/api/feedback';

@@ -16,7 +16,10 @@ module.exports = {
         clean: true,
     },
     resolve: {
-        extensions: ['.js'],
+        extensions: ['.js', '.json'],
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+        }
     },
     devServer: {
         port: 3000,
@@ -24,6 +27,14 @@ module.exports = {
         hot: true,
         liveReload: true,
         historyApiFallback: true,
+        proxy: [
+            {
+                context: ['/api'],
+                target: 'http://localhost:8080',
+                changeOrigin: true,
+                secure: false,
+            }
+        ],
     },
     devtool: isDev ? 'source-map' : false,
     plugins: [

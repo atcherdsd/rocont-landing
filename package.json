@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "cross-env NODE_ENV=development webpack serve --open --mode development",
+        "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+        "dev:client": "cross-env NODE_ENV=development webpack serve --open --mode development",
+        "dev:server": "node server.js",
         "build": "cross-env NODE_ENV=production webpack --mode production",
         "serve:prod": "npm run build && serve -s dist -l 3000",
         "lint": "eslint . --ext .js"
@@ -22,6 +24,7 @@
     },
     "homepage": "https://github.com/atcherdsd/rocont-landing#readme",
     "devDependencies": {
+        "concurrently": "^9.2.0",
         "copy-webpack-plugin": "^13.0.0",
         "cross-env": "^7.0.3",
         "css-loader": "^7.1.2",

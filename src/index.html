@@ -71,7 +71,7 @@
                         <span class="line"> а&nbsp;из&nbsp;любви&nbsp;к красивым словам. Один стик </span>
                         <span class="line">в&nbsp;день&nbsp;—&nbsp;и&nbsp;вы чувствуете, что делаете что-то важное. Что именно — решать вам.</span>
                     </p>
-                    <button type="button" class="button-rounded">
+                    <button type="button" class="button-rounded -large">
                         <span class="text">Попробовать просто так</span>
                         <svg class="icon" width="48" height="20" aria-hidden="true">
                             <use href="assets/icons/sprite.svg#icon-arrow"></use>
@@ -184,6 +184,67 @@
                             <use href="assets/icons/sprite.svg#icon-arrow"></use>
                         </svg>
                     </button>
+                </div>
+            </section>
+
+            <section class="form-section" aria-labelledby="form-title">
+                <div class="inner">
+                    <div class="content">
+                        <h2 class="title" id="form-title">Если вы тоже&nbsp;решили <br>«а&nbsp;почему бы и&nbsp;нет»</h2>
+                        <ul class="list">
+                            <li class="item">Можно заказать много</li>
+                            <li class="item">Доступ возможен через северный интерфейс</li>
+                            <li class="item">Можно просто поболтать</li>
+                        </ul>
+                    </div>
+                    
+                    <form class="feedback-form" action="" novalidate>
+                        <fieldset class="fieldset">
+                            <legend class="visually-hidden">Контактная информация</legend>
+                            <div class="group">
+                                <label for="name" class="visually-hidden">Имя</label>
+                                <input id="name" class="input -data" type="text" name="name"
+                                    placeholder="Имя" autocomplete="name" required aria-required="true"
+                                    pattern="^[A-Za-zА-Яа-яЁё\s\-']{2,50}$"
+                                    data-pattern-message="Имя должно состоять только из букв, пробелов, дефиса или апострофа (2–50 символов)"
+                                >
+                                <div class="error" data-for="name"></div>
+                            </div>
+                            <div class="group">
+                                <label for="phone" class="visually-hidden">Телефон</label>
+                                <input id="phone" class="input -data" type="tel" name="phone" 
+                                    placeholder="Телефон" autocomplete="tel"
+                                    pattern="^\+?[0-9\-\s]{7,15}$"
+                                    required aria-required="true"
+                                    data-pattern-message="Введите номер в формате: +7 123 456-7890"
+                                >
+                                <div class="error" data-for="phone"></div>
+                            </div>
+                            <div class="group">
+                                <label class="checkbox">
+                                    <input class="visually-hidden agree" type="checkbox" name="agree"
+                                        required aria-required="true"
+                                    >
+                                    <svg class="icon -unchecked" width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-unchecked"></use>
+                                    </svg>
+                                    <svg class="icon -checked" width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-checked"></use>
+                                    </svg>
+                                    <p class="note">Согласен(-на) на обработку чего угодно — лишь бы форма работала</p>
+                                </label>
+                                <div class="error" data-for="agree"></div>
+                            </div>
+                        </fieldset>
+
+                        <button class="button-rounded -white" type="submit">
+                            <span class="text">Отправить</span>
+                            <svg class="icon" width="48" height="20" aria-hidden="true">
+                                <use href="assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                            <span class="spinner"></span>
+                        </button>
+                    </form>
                 </div>
             </section>
 

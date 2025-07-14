@@ -1,6 +1,7 @@
 import './styles/main.scss';
 import { checkWebp } from './utils/helpers.js';
 import SandwichButton from './components/ui/sandwich-button/sandwich-button.js';
+import FeedbackForm from './components/blocks/feedback-form/feedback-form.js';
 
 checkWebp();
 
@@ -27,6 +28,9 @@ const initApp = () => {
     
       observer.observe(mainSlider);
     }
+
+    const feedbackForm = document.querySelector('.feedback-form');
+    if (feedbackForm) new FeedbackForm(feedbackForm);
 };
 
 initApp();

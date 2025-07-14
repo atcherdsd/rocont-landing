@@ -42,15 +42,14 @@
 
     > .nav {
         display: none;
-        position: absolute;
-        bottom: 0;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        column-gap: 16px;
 
         @include media-breakpoint-up(lg) {
-            display: block;
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
         }
     }
 
