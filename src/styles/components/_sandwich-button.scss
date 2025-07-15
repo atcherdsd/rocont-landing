@@ -1,0 +1,45 @@
+@use '../members' as *;
+
+.sandwich-button {
+    --btn-bg-color: var(--green);
+    --line-bg-color: var(--white);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3px;
+    background-color: var(--btn-bg-color);
+    border-radius: 50%;
+    padding: 12px 9px;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+
+    > .line {
+        width: 18px;
+        height: 2px;
+        background-color: var(--line-bg-color);
+        border-radius: 2px;
+        transition:
+            transform $base-transition-time ease-in-out,
+            opacity $base-transition-time ease-in-out;
+    }
+
+    &.-opened {
+        > .line {
+            &:first-child {
+                transform: translateY(4px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+    }
+}

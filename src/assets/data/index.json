@@ -1,0 +1,14 @@
+{
+    "validationMessages": {
+        "required": "Это поле обязательно",
+        "onlySpaces": "Поле не содержит данных",
+        "invalidFormat": "Неверный формат",
+        "invalidType": "Неверный тип данных",
+        "minDigits": "Нужно указать не менее 7 цифр"
+    },
+    "sendMessage": {
+        "send": "Отправка...",
+        "sendError": "Ошибка отправки"
+    },
+    "serverMessage": "Форма отправлена"
+}

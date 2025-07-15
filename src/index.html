@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Siarhei Charniak">
+        <meta name="description" content="Rocont landing">
+        <title>Rocont</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="inner">
+                <a href="/" class="logo" aria-label="Перейти на главную">
+                    <img class="img" src="./assets/icons/logo.svg" alt="Логотип Rocont" width="130" height="36">
+                </a>
+        
+                <nav class="main-nav" aria-label="Главное меню">
+                    <ul class="list">
+                        <li><a class="link" href="#">О системе</a></li>
+                        <li><a class="link" href="#">Архитектура</a></li>
+                        <li><a class="link" href="#">Мнения</a></li>
+                        <li><a class="button-rounded -small" href="#">Попробовать</a></li>
+                        <li><a class="link" href="#">Для своих</a></li>
+                    </ul>
+                </nav>
+
+                <button class="sandwich-button" aria-label="Меню">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </header>
+        
+        <main class="main">
+            <section class="lead-section">
+                <div class="media">
+                    <picture class="bg">
+                        <source srcset="./assets/poster/poster.webp" type="image/webp" media="(min-width: 960px)">
+                        <source srcset="./assets/poster/poster.jpg" media="(min-width: 960px)">
+                        <source srcset="./assets/poster/poster-640.webp" type="image/webp" media="(min-width: 640px)">
+                        <source srcset="./assets/poster/poster-640.jpg" media="(min-width: 640px)">
+                        <source srcset="./assets/poster/poster-480.webp" type="image/webp" media="(min-width: 480px)">
+                        <source srcset="./assets/poster/poster-480.jpg" media="(min-width: 480px)">
+                        <source srcset="./assets/poster/poster-320.webp" type="image/webp">
+                        <source srcset="./assets/poster/poster-320.jpg">
+                        <img class="img" src="./assets/poster/poster.jpg" alt="" width="1160" height="461" loading="eager">
+                    </picture>
+                    <video 
+                        class="video" 
+                        autoplay 
+                        muted 
+                        loop 
+                        playsinline 
+                        preload="metadata"
+                        aria-hidden="true"
+                    >
+                        <source src="assets/videos/lead-bg.webm" type="video/webm">
+                        <source src="assets/videos/lead-bg.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видеофоны
+                    </video>
+                </div>
+
+                <div class="content">
+                    <h1 class="title">
+                        <span class="line">Просто потому что&nbsp;можем</span>
+                        <span class="line">с Collagen</span>
+                    </h1>
+                    <p class="description">
+                        <span class="line">Мы сделали это средство не ради прибыли,</span>
+                        <span class="line"> а&nbsp;из&nbsp;любви&nbsp;к красивым словам. Один стик </span>
+                        <span class="line">в&nbsp;день&nbsp;—&nbsp;и&nbsp;вы чувствуете, что делаете что-то важное. Что именно — решать вам.</span>
+                    </p>
+                    <button type="button" class="button-rounded -large">
+                        <span class="text">Попробовать просто так</span>
+                        <svg class="icon" width="48" height="20" aria-hidden="true">
+                            <use href="assets/icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                    <p class="note">
+                        <span>Сертификат есть. Но это не точно.</span>
+                        <span> СГР №AM.01.01 .01.003.R.00&nbsp;o47&nbsp;4.06.24</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="slider-section">
+                <h2 class="title">Это — не совсем то, что вы думаете</h2>
+
+                <div class="container">
+                    <div class="main-slider swiper" role="region" aria-label="Наша галерея">
+                        <ul class="wrapper swiper-wrapper">
+                            <li class="slide swiper-slide">
+                                <picture class="picture">
+                                    <source srcset="./assets/images/slides/slide1-xl.webp" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide1-xl.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide1-lg.webp" type="image/webp" media="(min-width: 960px)">
+                                    <source srcset="./assets/images/slides/slide1-lg.jpg" media="(min-width: 960px)">
+                                    <source srcset="./assets/images/slides/slide1-md.webp" type="image/webp" media="(min-width: 640px)">
+                                    <source srcset="./assets/images/slides/slide1-md.jpg" media="(min-width: 640px)">
+                                    <source srcset="./assets/images/slides/slide1-sm.webp" type="image/webp">
+                                    <source srcset="./assets/images/slides/slide1-sm.jpg">
+                                    <img class="img" src="./assets/images/slides/slide1-xl.jpg" alt="" aria-hidden="true" width="300" height="450" loading="lazy">
+                                </picture>
+                                <h3 class="title">Немного упругости</h3>
+                                <p class="text">
+                                    <span>Чуть-чуть сияния, </span>
+                                    <span>и ощущение, что вы о себе позаботились</span>
+                                </p>
+                            </li>
+                            <li class="slide swiper-slide">
+                                <picture class="picture">
+                                    <source srcset="./assets/images/slides/slide2-xl.webp" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide2-xl.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide2-lg.webp" type="image/webp" media="(min-width: 960px)">
+                                    <source srcset="./assets/images/slides/slide2-lg.jpg" media="(min-width: 960px)">
+                                    <source srcset="./assets/images/slides/slide2-md.webp" type="image/webp" media="(min-width: 640px)">
+                                    <source srcset="./assets/images/slides/slide2-md.jpg" media="(min-width: 640px)">
+                                    <source srcset="./assets/images/slides/slide2-sm.webp" type="image/webp">
+                                    <source srcset="./assets/images/slides/slide2-sm.jpg">
+                                    <img class="img" src="./assets/images/slides/slide2-xl.jpg" alt="" aria-hidden="true" width="300" height="450" loading="lazy">
+                                </picture>
+                                <h3 class="title">Немного упругости</h3>
+                                <p class="text">
+                                    <span>Чуть-чуть сияния, </span>
+                                    <span>и ощущение, что вы о себе позаботились</span>
+                                </p>
+                            </li>
+                            <li class="slide swiper-slide">
+                                <picture class="picture">
+                                    <source srcset="./assets/images/slides/slide3-xl.webp" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide3-xl.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide3-lg.webp" type="image/webp" media="(min-width: 960px)">
+                                    <source srcset="./assets/images/slides/slide3-lg.jpg" media="(min-width: 960px)">
+                                    <source srcset="./assets/images/slides/slide3-md.webp" type="image/webp">
+                                    <source srcset="./assets/images/slides/slide3-md.jpg">
+                                    <img class="img" src="./assets/images/slides/slide3-xl.jpg" alt="" aria-hidden="true" width="300" height="450" loading="lazy">
+                                </picture>
+                                <h3 class="title">Немного упругости</h3>
+                                <p class="text">
+                                    <span>Чуть-чуть сияния, </span>
+                                    <span>и ощущение, что вы о себе позаботились</span>
+                                </p>
+                            </li>
+                            <li class="slide swiper-slide">
+                                <picture class="picture">
+                                    <source srcset="./assets/images/slides/slide4-xl.webp" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide4-xl.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide4-lg.webp" type="image/webp">
+                                    <source srcset="./assets/images/slides/slide4-lg.jpg">
+                                    <img class="img" src="./assets/images/slides/slide4-xl.jpg" alt="" aria-hidden="true" width="300" height="450" loading="lazy">
+                                </picture>
+                                <h3 class="title">Немного упругости</h3>
+                                <p class="text">
+                                    <span>Чуть-чуть сияния, </span>
+                                    <span>и ощущение, что вы о себе позаботились</span>
+                                </p>
+                            </li>
+                            <li class="slide swiper-slide">
+                                <picture class="picture">
+                                    <source srcset="./assets/images/slides/slide5-xl.webp" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide5-xl.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./assets/images/slides/slide5-lg.webp" type="image/webp">
+                                    <source srcset="./assets/images/slides/slide5-lg.jpg">
+                                    <img class="img" src="./assets/images/slides/slide5-xl.jpg" alt="" aria-hidden="true" width="300" height="450" loading="lazy">
+                                </picture>
+                                <h3 class="title">Немного упругости</h3>
+                                <p class="text">
+                                    <span>Чуть-чуть сияния, </span>
+                                    <span>и ощущение, что вы о себе позаботились</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav">
+                    <button class="button -prev" aria-label="Предыдущий слайд">
+                        <svg class="icon" width="48" height="20" aria-hidden="true">
+                            <use href="assets/icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="button -next" aria-label="Следующий слайд">
+                        <svg class="icon" width="48" height="20" aria-hidden="true">
+                            <use href="assets/icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="form-section" aria-labelledby="form-title">
+                <div class="inner">
+                    <div class="content">
+                        <h2 class="title" id="form-title">Если вы тоже&nbsp;решили <br>«а&nbsp;почему бы и&nbsp;нет»</h2>
+                        <ul class="list">
+                            <li class="item">Можно заказать много</li>
+                            <li class="item">Доступ возможен через северный интерфейс</li>
+                            <li class="item">Можно просто поболтать</li>
+                        </ul>
+                    </div>
+                    
+                    <form class="feedback-form" novalidate>
+                        <fieldset class="fieldset">
+                            <legend class="visually-hidden">Контактная информация</legend>
+                            <div class="group">
+                                <label for="name" class="visually-hidden">Имя</label>
+                                <input id="name" class="input -data" type="text" name="name"
+                                    placeholder="Имя" autocomplete="name" required aria-required="true"
+                                    pattern="^[A-Za-zА-Яа-яЁё\s\-']{2,50}$"
+                                    data-pattern-message="Имя должно состоять только из букв, пробелов, дефиса или апострофа (2–50 символов)"
+                                >
+                                <div class="error" data-for="name"></div>
+                            </div>
+                            <div class="group">
+                                <label for="phone" class="visually-hidden">Телефон</label>
+                                <input id="phone" class="input -data" type="tel" name="phone" 
+                                    placeholder="Телефон" autocomplete="tel"
+                                    pattern="^\+?[0-9\-\s]{7,15}$"
+                                    required aria-required="true"
+                                    data-pattern-message="Введите номер в формате: +7 123 456-7890"
+                                >
+                                <div class="error" data-for="phone"></div>
+                            </div>
+                            <div class="group">
+                                <label class="checkbox">
+                                    <input class="visually-hidden agree" type="checkbox" name="agree"
+                                        required aria-required="true"
+                                    >
+                                    <svg class="icon -unchecked" width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-unchecked"></use>
+                                    </svg>
+                                    <svg class="icon -checked" width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-checked"></use>
+                                    </svg>
+                                    <span class="note">Согласен(-на) на обработку чего угодно — лишь бы форма работала</span>
+                                </label>
+                                <div class="error" data-for="agree"></div>
+                            </div>
+                        </fieldset>
+
+                        <button class="button-rounded -white" type="submit">
+                            <span class="text">Отправить</span>
+                            <svg class="icon" width="48" height="20" aria-hidden="true">
+                                <use href="assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                            <span class="spinner"></span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contacts-section" aria-labelledby="contacts-title">
+                <div class="inner">
+                    <div class="contacts">
+                        <h2 class="title" id="contacts-title">Контакты</h2>
+                        <ul class="list">
+                            <li class="item">
+                                <span class="icon">
+                                    <svg width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-location"></use>
+                                    </svg>
+                                </span>
+                                <p class="text">Офис, где делают странные, но симпатичные вещи</p>
+                            </li>
+                            <li class="item">
+                                <span class="icon">
+                                    <svg width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-clock"></use>
+                                    </svg>
+                                </span>
+                                <p class="text">Пн-Пт с 10:00 до 20:00</p>
+                            </li>
+                            <li class="item">
+                                <span class="icon">
+                                    <svg width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                </span>
+                                <a class="link" href="tel:+88004444444">8 (800) 444 44 44</a>
+                            </li>
+                            <li class="item">
+                                <span class="icon">
+                                    <svg width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                </span>
+                                <a class="link" href="tel:+88008888888">8 (800) 888 88 88</a>
+                            </li>
+                            <li class="item">
+                                <span class="icon">
+                                    <svg width="24" height="24" aria-hidden="true">
+                                        <use href="assets/icons/sprite.svg#icon-email"></use>
+                                    </svg>
+                                </span>
+                                <a class="link" href="mailto:example@mail.ru">example@mail.ru</a>
+                            </li>
+                        </ul>
+                        <button class="button-rounded -space-between" type="button">
+                            <span class="text">Связаться</span>
+                            <svg class="icon" width="48" height="20" aria-hidden="true">
+                                <use href="assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="map" role="region" aria-label="Карта расположения офиса">
+                        <div class="container" id="contacts-map"></div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="inner">
+                <a href="/" class="logo" aria-label="Перейти на главную">
+                    <img class="img" src="./assets/icons/logo.svg" alt="Логотип Rocont" width="130" height="36">
+                </a>
+
+                <nav class="nav" aria-label="Навигация по сайту">
+                    <ul class="list">
+                        <li class="item"><a href="#">О системе</a></li>
+                        <li class="item"><a href="#">Архитектура</a></li>
+                        <li class="item"><a href="#">Состав</a></li>
+                        <li class="item"><a href="#">Отзывы</a></li>
+                        <li class="item"><a href="#">Для своих</a></li>
+                    </ul>
+                </nav>
+                
+                <hr class="hr" aria-hidden="true">
+                <div class="privacy">
+                    <p class="copy">Коллаген © <time datetime="2025">2025</time></p>
+                    <a class="policy" href="#" aria-label="Политика обработки персональных данных">
+                        Политика обработки чего-то личного
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

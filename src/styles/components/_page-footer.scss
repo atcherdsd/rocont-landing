@@ -1,0 +1,125 @@
+@use '../members' as *;
+
+.page-footer {
+    width: 100%;
+    padding: 32px 10px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 32px 22px 32px 10px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 32px 0;
+    }
+
+    > .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+    }
+
+    > .inner > .logo {
+        @include media-breakpoint-up(lg) {
+            order: 3;
+        }
+    }
+
+    > .inner > .logo > .img {
+        width: 130px;
+        height: 36px;
+    }
+
+    > .inner > .nav > .list {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+
+        @include media-breakpoint-up(sm) {
+            grid-template-columns: repeat(3, auto);
+            justify-content: flex-start;
+            column-gap: 64px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            gap: 16px 32px;
+        }
+    }
+
+    > .inner > .nav > .list > .item {
+        width: fit-content;
+
+        &:nth-child(3) {
+            @include media-breakpoint-up(sm) {
+                order: 4;
+            }
+        }
+
+        &:nth-child(4) {
+            @include media-breakpoint-up(sm) {
+                order: 5;
+            }
+        }
+
+        &:nth-child(5) {
+            @include media-breakpoint-up(sm) {
+                order: 3;
+            }
+        }        
+    }
+
+    > .inner > .privacy {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+        @include media-breakpoint-up(lg) {
+            row-gap: 16px;
+            margin-left: auto;
+        }
+    }
+
+    > .inner > .nav > .list > .item a,
+    > .inner > .privacy > .copy,
+    > .inner > .privacy > .policy {
+        color: var(--black);
+        margin-block-start: -0.2em;
+        margin-block-end: -0.2em;
+        
+        @include link;
+
+        @include media-breakpoint-up(md) {
+            margin-block-start: -0.25em;
+            margin-block-end: -0.175em;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-block-start: 0;
+            margin-block-end: 0;
+
+            @include body;
+        }
+    }
+
+    > .inner > .nav > .list > .item a {
+        display: block;
+    }
+
+    > .inner > .hr {
+        width: 100%;
+        height: 2px;
+        background-color: var(--black);
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use 'sass:list';
+
+$font-gropled-name: "Gropled";
+$font-gropled-family: $font-gropled-name, Arial, sans-serif;
+
+@font-face {
+    font-family: $font-gropled-name;
+    src: url('../assets/fonts/Gropled-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Gropled-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font-tilda-name: "TildaSans";
+$font-tilda-family: $font-tilda-name, Arial, sans-serif;
+
+$fontTildaFiles: (
+    "TildaSans-Regular": (400),
+    "TildaSans-Medium": (500)
+);
+
+@each $fileName, $weight in $fontTildaFiles {
+
+    @font-face {
+        font-family: $font-tilda-name;
+        src: url('../assets/fonts/#{$fileName}.woff2') format('woff2'),
+            url('../assets/fonts/#{$fileName}.woff') format('woff');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
