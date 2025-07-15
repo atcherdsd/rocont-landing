@@ -10,8 +10,8 @@
     <body>
         <header class="page-header">
             <div class="inner">
-                <a href="/" class="logo" aria-label="На главную">
-                    <img class="img" src="./assets/icons/logo.svg" alt="Rocont" width="130" height="36">
+                <a href="/" class="logo" aria-label="Перейти на главную">
+                    <img class="img" src="./assets/icons/logo.svg" alt="Логотип Rocont" width="130" height="36">
                 </a>
         
                 <nav class="main-nav" aria-label="Главное меню">
@@ -198,7 +198,7 @@
                         </ul>
                     </div>
                     
-                    <form class="feedback-form" action="" novalidate>
+                    <form class="feedback-form" novalidate>
                         <fieldset class="fieldset">
                             <legend class="visually-hidden">Контактная информация</legend>
                             <div class="group">
@@ -231,7 +231,7 @@
                                     <svg class="icon -checked" width="24" height="24" aria-hidden="true">
                                         <use href="assets/icons/sprite.svg#icon-checked"></use>
                                     </svg>
-                                    <p class="note">Согласен(-на) на обработку чего угодно — лишь бы форма работала</p>
+                                    <span class="note">Согласен(-на) на обработку чего угодно — лишь бы форма работала</span>
                                 </label>
                                 <div class="error" data-for="agree"></div>
                             </div>
@@ -248,10 +248,10 @@
                 </div>
             </section>
 
-            <section class="contacts-section">
+            <section class="contacts-section" aria-labelledby="contacts-title">
                 <div class="inner">
                     <div class="contacts">
-                        <h2 class="title">Контакты</h2>
+                        <h2 class="title" id="contacts-title">Контакты</h2>
                         <ul class="list">
                             <li class="item">
                                 <span class="icon">
@@ -302,13 +302,38 @@
                         </button>
                     </div>
 
-                    <div class="map">
+                    <div class="map" role="region" aria-label="Карта расположения офиса">
                         <div class="container" id="contacts-map"></div>
                     </div>
                     
                 </div>
             </section>
-
         </main>
+
+        <footer class="page-footer">
+            <div class="inner">
+                <a href="/" class="logo" aria-label="Перейти на главную">
+                    <img class="img" src="./assets/icons/logo.svg" alt="Логотип Rocont" width="130" height="36">
+                </a>
+
+                <nav class="nav" aria-label="Навигация по сайту">
+                    <ul class="list">
+                        <li class="item"><a href="#">О системе</a></li>
+                        <li class="item"><a href="#">Архитектура</a></li>
+                        <li class="item"><a href="#">Состав</a></li>
+                        <li class="item"><a href="#">Отзывы</a></li>
+                        <li class="item"><a href="#">Для своих</a></li>
+                    </ul>
+                </nav>
+                
+                <hr class="hr" aria-hidden="true">
+                <div class="privacy">
+                    <p class="copy">Коллаген © <time datetime="2025">2025</time></p>
+                    <a class="policy" href="#" aria-label="Политика обработки персональных данных">
+                        Политика обработки чего-то личного
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
