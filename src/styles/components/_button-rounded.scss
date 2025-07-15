@@ -54,6 +54,10 @@
         --arrow: var(--white);
     }
 
+    &.-space-between {
+        justify-content: space-between;
+    }
+
     &.-loading,
     &.-success,
     &.-error {

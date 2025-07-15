@@ -15,6 +15,10 @@ module.exports = {
         assetModuleFilename: 'assets/[hash][ext][query]',
         clean: true,
     },
+    externalsType: 'script',
+    externals: {
+        ymaps3: ['https://api-maps.yandex.ru/v3/?apikey=d5abe6a2-93f5-4a6b-9428-48f2db4b377a&lang=ru_RU', 'ymaps3']
+    },
     resolve: {
         extensions: ['.js', '.json'],
         alias: {

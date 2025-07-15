@@ -2,6 +2,7 @@ import './styles/main.scss';
 import { checkWebp } from './utils/helpers.js';
 import SandwichButton from './components/ui/sandwich-button/sandwich-button.js';
 import FeedbackForm from './components/blocks/feedback-form/feedback-form.js';
+import Map from './components/blocks/map/map.js';
 
 checkWebp();
 
@@ -31,6 +32,8 @@ const initApp = () => {
 
     const feedbackForm = document.querySelector('.feedback-form');
     if (feedbackForm) new FeedbackForm(feedbackForm);
+
+    new Map('contacts-map', [30.437564, 59.993232], [30.437378, 59.994350], 16);
 };
 
 initApp();

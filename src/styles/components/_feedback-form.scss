@@ -5,9 +5,8 @@
     gap: 24px;
     
     @include media-breakpoint-up(lg) {
-        align-items: flex-start;
         gap: 16px;
-        padding-bottom: 7px;
+        height: fit-content;
     }
 
     @include media-breakpoint-up(xl) {
@@ -24,6 +23,12 @@
         }
     }
     
+    > .fieldset > .group:last-child {
+        @include media-breakpoint-range(sm, lg) {
+            grid-column: 1/3;
+        }
+    }
+
     > .fieldset > .group > .input.-data {
         width: 100%;
         border-radius: 40px;
