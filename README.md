@@ -2,6 +2,8 @@
 
 SPA‑проект с формой обратной связи и API‑сервером.
 
+Деплой - https://rocont-landing.netlify.app/
+
 ## Установка и запуск
 
 ```bash
